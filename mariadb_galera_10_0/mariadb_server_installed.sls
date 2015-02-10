@@ -1,7 +1,7 @@
 
 include:
     - mariadb_10_0.repo_installed
-    - mysql.default_mysql_removed
+    - mysql.default_mysql_uninstalled
 
 mariadb_server_installed:
     pkg.installed:
@@ -10,5 +10,5 @@ mariadb_server_installed:
             - MariaDB-Galera-server
             - galera
         - require:
-            - pkg: default_mysql_removed
+            - pkg: default_mysql_uninstalled
             - pkgrepo: repo_installed

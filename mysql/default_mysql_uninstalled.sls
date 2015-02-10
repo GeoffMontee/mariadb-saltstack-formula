@@ -1,5 +1,5 @@
 
-default_mysql_removed:
+default_mysql_uninstalled:
     pkg.removed:
         - pkgs:
 {% if grains['os']=="CentOS" %}

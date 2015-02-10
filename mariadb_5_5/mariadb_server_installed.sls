@@ -1,7 +1,7 @@
 
 include:
     - mariadb_5_5.repo_installed
-    - mysql.default_mysql_removed
+    - mysql.default_mysql_uninstalled
 
 mariadb_server_installed:
     pkg.installed:
@@ -9,5 +9,5 @@ mariadb_server_installed:
             - MariaDB-client
             - MariaDB-server
         - require:
-            - pkg: default_mysql_removed
+            - pkg: default_mysql_uninstalled
             - pkgrepo: repo_installed
