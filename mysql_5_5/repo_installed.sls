@@ -12,7 +12,7 @@ repo_installed:
         - baseurl: http://repo.mysql.com/yum/mysql-5.5-community/el/7/$basearch/
 {% endif %}
 {% endif %}
-        - gpgkey: http://pgp.mit.edu/pks/lookup?op=get&search=0x8C718D3B5072E1F5
+        - gpgkey: http://pgp.mit.edu/pks/lookup?op=get&search=0x8C718D3B5072E1F5&options=mr
         - gpgcheck: 0
 {% endif %}
         - comments:
