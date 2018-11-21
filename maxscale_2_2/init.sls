@@ -1,4 +1,4 @@
 
 include:
-    - maxscale.maxscale_installed
-    - maxscale.maxscale_service_enabled
+    - maxscale_2_2.maxscale_installed
+    - maxscale_2_2.maxscale_service_enabled
